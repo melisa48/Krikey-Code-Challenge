@@ -12,6 +12,7 @@ To run this project locally, follow these steps:
 4. Run `npm install` to install the project dependencies.
 5. After the installation is complete, run `npm start` to start the development server.
 6. Open your web browser and go to `http://localhost:3000` to view the website.
-
+## Deployment Page
+The deployed web page can be accessed [here](https://krikey-code-challenge.vercel.app/).
 
 
