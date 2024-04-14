@@ -1,0 +1,56 @@
+/* Add styles for NavigationMenu component elements (logo, menu items, dropdown menu, button) */
+
+.navigation-menu {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 20px;
+     background-color: white;
+   }
+   
+   .logo {
+    width: 70px; /* Adjust width as needed */
+    margin-left: 50px; /* Add margin to the left */
+    float: left; /* Make the logo float to the left */
+   }
+   
+   .menu-items {
+     display: flex;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+   }
+   
+   .menu-item {
+     margin-right: 20px;
+     font-weight: light;
+     cursor: pointer; /* Add cursor pointer for hover effect */
+   }
+   
+   .menu-item i {
+     margin-left: 5px;
+   }
+   
+   .dropdown-menu {
+     display: none;
+     position: absolute;
+     background-color: #fff;
+     border: 1px solid #ddd;
+     padding: 10px;
+     /* Add styles for dropdown menu items */
+   }
+   
+   .dropdown-item {
+     padding: 5px 10px;
+     cursor: pointer; /* Add cursor pointer for hover effect */
+   }
+   
+   .get-started-btn {
+     background-color: #3cb8c6;
+     color: #fff;
+     padding: 7px 10px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+   }
+   

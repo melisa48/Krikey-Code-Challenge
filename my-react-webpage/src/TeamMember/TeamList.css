@@ -1,0 +1,39 @@
+/* Styles for the entire team section */
+.team-section {
+    display: flex; /* Allow horizontal layout for rectangle and member container */
+    flex-direction: column; /* Stack elements vertically */
+    width: 100%; /* Make the section span the full width */
+  }
+  
+  .team-count-frame {
+    background-color: #f0f0f0; /* Example background color */
+    border: 1px solid #ddd; /* Example border */
+    padding: 10px 20px; /* Example padding */
+    display: flex; /* Allow horizontal layout for text and arrow icon */
+    align-items: center; /* Align content vertically within the rectangle */
+    justify-content: space-between; /* Distribute content horizontally with space */
+    width: 100%; /* Make the rectangle span the full width */
+    margin-bottom: 20px; /* Add some margin below the rectangle */
+  }
+  
+  .team-count-frame p {
+    font-size: 18px; /* Example font size */
+    font-weight: bold; /* Example font weight */
+    color: black; /* Example text color */
+    margin: 0; /* Remove default margin for better alignment */
+  }
+  
+  .team-count-frame .fas.fa-chevron-right {
+    /* Styles for the optional left arrow icon (assuming Font Awesome) */
+    font-size: 20px; /* Example font size */
+    color: #333; /* Example color */
+    margin-left: 10px; /* Add some margin to the left */
+  }
+  
+  .team-members-container {
+    display: flex; /* Arrange team members horizontally */
+    flex-wrap: wrap; /* Allow wrapping to multiple lines */
+    justify-content: flex-start; /* Align members to the left */
+    width: 100%; /* Make the container span the full width */
+  }
+  

@@ -1,0 +1,36 @@
+/* TeamMember.css */
+.team-member {
+     display: flex;
+     align-items: center;
+     margin-bottom: 20px;
+ }
+ 
+ .profile-picture {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     margin-right: 15px;
+ }
+ 
+ .member-info {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .member-name {
+     font-size: 1.2em;
+     margin: 0;
+ }
+ 
+ .member-email {
+     font-size: 0.9em;
+     color: #666;
+ }
+ 
+ /* TeamList.css */
+ .team-list {
+     display: flex;
+     flex-direction: column;
+     padding: 20px;
+ }
+ 

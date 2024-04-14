@@ -1,0 +1,16 @@
+{
+     "sqltools.connections": [
+          {
+               "previewLimit": 50,
+               "server": "localhost",
+               "port": 5432,
+               "driver": "PostgreSQL",
+               "name": "PG Local",
+               "group": "Local PostgreSQL Server",
+               "database": "bookstore_management_db",
+               "username": "postgres",
+               "password": "048124",
+               "connectionTimeout": 30
+          }
+     ]
+}

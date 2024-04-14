@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My React App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./index.css">  
+  <style>
+    /* Styles for the rectangle frame */
+    .rectangle-frame {
+      width: 400px; /* Adjust width as needed */
+      height: auto; /* Set height to auto to accommodate dynamic content */
+      max-height: 500px; /* Limit maximum height to prevent excessive scrolling */
+      background-color: whitesmoke; /* Adjust background color as needed */
+      border: 2px solid white; /* Adjust border styles as needed */
+      border-radius: 10px; /* Adjust border radius as needed */
+      margin: auto; /* Center the frame horizontally */
+      margin-top: 50px; /* Adjust top margin as needed */
+      padding: 20px; /* Add padding for inner content */
+      overflow-y: auto; /* Add vertical scrollbar if content exceeds height */
+      position: relative; /* Position relative for absolute positioning */
+    }
+
+    /* Styles for the arrow and text */
+    .top-text {
+      position: absolute; /* Position absolute to position it at the top */
+      top: -50px; /* Adjust top position as needed */
+      left: 50%; /* Position at the center horizontally */
+      transform: translateX(-50%); /* Center horizontally */
+      display: flex;
+      align-items: center;
+      color: #333;
+      font-size: 14px; /* Adjust font size */
+    }
+
+    .top-text i {
+      margin-right: 10px;
+      font-size: 16px; /* Adjust font size */
+    }
+
+    /* Styles for each row */
+    .author-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid white; /* Add border between rows */
+    }
+
+    /* Styles for author information */
+    .author-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .author-pic {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .author-name {
+      font-weight: bold;
+    }
+
+    .author-email {
+      color: #666;
+    }
+
+    /* Styles for remove button */
+    .remove-btn {
+      background-color: #f0f0f0;
+      border: none;
+      border-radius: 50%;
+      padding: 5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+    }
+
+    .remove-btn i {
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <div class="rectangle-frame">
+    <div class="top-text">
+      <i class="fas fa-arrow-left"></i>
+      <h3> 8 best seller authors</h3>
+    </div>
+    <div class="author-row">
+      <div class="author-info">
+        <img src="jane-austen.jpg" alt="Jane Austen" class="author-pic">
+        <div>
+          <div class="author-name">Jane Austen</div>
+          <div class="author-email">jane@example.com</div>
+        </div>
+      </div>
+      <button class="remove-btn"><i class="fas fa-times"></i></button>
+    </div>
+    <!-- Repeat the above row structure for the remaining authors -->
+    <div class="author-row">
+      <div class="author-info">
+        <img src="George-Orwell.jpg" alt="George Orwell" class="author-pic">
+        <div>
+          <div class="author-name">George Orwell</div>
+          <div class="author-email">george@example.com</div>
+        </div>
+      </div>
+      <button class="remove-btn"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="author-row">
+      <div class="author-info">
+        <img src="william-shakespeare.jpg" alt="William Shakespeare" class="author-pic">
+        <div>
+          <div class="author-name">William Shakespeare</div>
+          <div class="author-email">william@example.com</div>
+        </div>
+      </div>
+      <button class="remove-btn"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="author-row">
+      <div class="author-info">
+        <img src="charles-dickens.jpg" alt="Charles Dickens" class="author-pic">
+        <div>
+          <div class="author-name">Charles Dickens</div>
+          <div class="author-email">charles@example.com</div>
+        </div>
+      </div>
+      <button class="remove-btn"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="author-row">
+      <div class="author-info">
+        <img src="Ernest-Hemingway.jpg" alt="Ernest Hemingway" class="author-pic">
+        <div>
+          <div class="author-name">Ernest Hemingway</div>
+          <div class="author-email">ernest@example.com</div>
+        </div>
+      </div>
+      <button class="remove-btn"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="author-row">
+      <div class="author-info">
+        <img src="Mark-Twain.jpg" alt="Mark Twain" class="author-pic">
+        <div>
+          <div class="author-name">Mark Twain</div>
+          <div class="author-email">mark@example.com</div>
+        </div>
+      </div>
+      <button class="remove-btn"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="author-row">
+      <div class="author-info">
+        <img src="Lorelai-Gilmore.jpg" alt="Lorelai Gilmore" class="author-pic">
+        <div>
+          <div class="author-name">Lorelai Gilmore</div>
+          <div class="author-email">gilmore@example.com</div>
+        </div>
+      </div>
+      <button class="remove-btn"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="author-row">
+      <div class="author-info">
+        <img src="stephen-king.jpg" alt="Stephen King" class="author-pic">
+        <div>
+          <div class="author-name">Stephen King</div>
+          <div class="author-email">stephen@example.com</div>
+        </div>
+      </div>
+      <button class="remove-btn"><i class="fas fa-times"></i></button>
+    </div>
+  </div>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="src/index.js"></script>
+</body>
+</html>
+
+
